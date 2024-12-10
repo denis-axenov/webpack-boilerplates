@@ -1,9 +1,9 @@
-import Module from "@scripts/module";
+import "@scripts/plugin";
 
 
 $(document).ready(function () {
 
-    new Module({
+    $(document).plugin({
         param1: 1,
         param2: 2
     });
