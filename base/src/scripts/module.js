@@ -1,25 +1,23 @@
-import {isNumber, isObject} from "@scripts/utils/types"
-
 export default class Module {
-    constructor(config) {
+    constructor(moduleConfig) {
 
-        if (!isObject(config)) {
-            throw new Error("Parameter must be an object");
+        if (typeof moduleConfig !== 'object' || moduleConfig === null || Array.isArray(moduleConfig)) {
+            throw new Error('Parameter must be an object');
         }
 
-        if (!('param1' in config) || !('param2' in config)) {
-            throw new Error("Required parameters param1 and param2 must be provided");
+        if (!('param1' in moduleConfig) || !('param2' in moduleConfig)) {
+            throw new Error('Required parameters param1 and param2 must be provided');
         }
 
-        if (!isNumber(config.param1) || !isNumber(config.param2)) {
-            throw new Error("Parameters param1 and param2 must be numbers");
+        if (typeof moduleConfig.param1 !== 'number' || typeof moduleConfig.param2 !== 'number') {
+            throw new Error('Parameters param1 and param2 must be numbers');
         }
 
-        this.config = config;
+        this.config = moduleConfig;
         this.init();
     }
 
     init() {
-        console.log("Module initialized", this.config);
+        console.log('Module initialized', this.config);
     }
 }
