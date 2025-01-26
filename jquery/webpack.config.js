@@ -1,6 +1,5 @@
 import path from "path";
 import * as Sass from "sass";
-import webpack from "webpack";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import ESLintPlugin from "eslint-webpack-plugin";
@@ -88,10 +87,6 @@ export default (env, argv) => {
             ]
         },
         plugins: [
-            new webpack.ProvidePlugin({
-                $: 'jquery',
-                jQuery: 'jquery'
-            }),
             new MiniCssExtractPlugin({
                 filename: "bundle.css"
             }),
