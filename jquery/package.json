@@ -1,7 +1,7 @@
 {
-  "name": "webpack-basic-boilerplate",
+  "name": "webpack-jquery-boilerplate",
   "version": "1.0.0",
-  "description": "Webpack Basic Boilerplate",
+  "description": "Webpack jQuery Boilerplate",
   "main": "src/scripts/main.js",
   "type": "module",
   "engines": {
@@ -9,7 +9,7 @@
   },
   "author": "Denis Axenov",
   "license": "MIT",
-  "homepage": "https://github.com/denis-axenov/webpack-boilerplates/tree/main/basic#readme",
+  "homepage": "https://github.com/denis-axenov/webpack-boilerplates/tree/main/jquery#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/denis-axenov/webpack-boilerplates.git"
@@ -61,5 +61,8 @@
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
   }
 }
