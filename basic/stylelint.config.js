@@ -58,7 +58,7 @@ export default {
         },
         {
             files: [
-                "src/templates/**/*.html"
+                "src/views/**/*.html"
             ],
             customSyntax: "postcss-html"
         }
