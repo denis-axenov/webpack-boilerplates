@@ -13,6 +13,7 @@ export default (env, argv) => {
 
 
     return {
+        mode: argv.mode,
         devtool: !isProduction && "source-map",
         entry: [
             resolveDir("src/scripts/main.js"),
