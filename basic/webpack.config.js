@@ -91,7 +91,7 @@ export default (env, argv) => {
                 filename: "bundle.css"
             }),
             new HtmlWebpackPlugin({
-                template: resolveDir("src/templates/index.html"),
+                template: resolveDir("src/views/index.html"),
                 inject: "body"
             }),
             ...(env.lint ? [
