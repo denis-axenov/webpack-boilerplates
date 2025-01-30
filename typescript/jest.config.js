@@ -1,13 +1,14 @@
 export default {
+    preset: 'ts-jest',
     moduleNameMapper: {
         "^@/(.*)$": "<rootDir>/src/$1",
     },
     testEnvironment: "jsdom",
-    testMatch: [
-        "**/__tests__/**/*.js"
-    ],
     transform: {
-        "^.+\\.js$": "@swc/jest",
+        "^.+\\.(t|j)s$": "@swc/jest",
     },
+    testMatch: [
+        "**/__tests__/**/*.ts"
+    ],
     passWithNoTests: true
 };
