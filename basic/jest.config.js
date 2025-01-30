@@ -7,7 +7,7 @@ export default {
         "**/__tests__/**/*.js"
     ],
     transform: {
-        "^.+\\.js?$": "@swc/jest",
+        "^.+\\.js$": "@swc/jest",
     },
     passWithNoTests: true
 };

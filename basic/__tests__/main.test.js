@@ -4,9 +4,7 @@ import "@/scripts/main";
 
 describe("DOMContentLoaded Event", () => {
     beforeAll(() => {
-        global.console = {
-            log: jest.fn(),
-        };
+        global.console.log = jest.fn();
     });
 
     afterAll(() => {
