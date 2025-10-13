@@ -17,7 +17,8 @@
       "@/interfaces/*": [
         "src/scripts/interfaces/*"
       ]
-    }
+    },
+    "typeRoots": []
   },
   "exclude": [
     "node_modules",
