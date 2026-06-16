@@ -1,0 +1,16 @@
+{
+  "watch": [
+    "webpack.config.js",
+    "postcss.config.js",
+    "eslint.config.js",
+    "stylelint.config.js",
+    "jest.config.js",
+    "package.json",
+    "tsconfig.json",
+    "nodemon.json"
+  ],
+  "ignore": [
+    "dist",
+    "node_modules"
+  ]
+}

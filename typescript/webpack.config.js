@@ -104,17 +104,20 @@ export default (env, argv) => {
             minimize: isProduction
         },
         stats: "minimal",
+        watchOptions: {
+            ignored: /node_modules|dist/,
+            poll: 1000
+        },
         devServer: {
             static: {
                 directory: buildFolder
             },
             compress: isProduction,
-            port: 9000,
+            port: "auto",
             watchFiles: [
                 resolveDir("src/**/*.(html|svg)")
             ],
-            hot: true,
-            open: true
+            hot: true
         }
     };
 };
