@@ -4,18 +4,17 @@
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
+    "module": "esnext",
+    "target": "es2017",
     "jsx": "react",
     "allowJs": true,
-    "moduleResolution": "node",
-    "baseUrl": "./",
+    "moduleResolution": "bundler",
     "paths": {
       "@/scripts/*": [
-        "src/scripts/*"
+        "./src/scripts/*"
       ],
       "@/interfaces/*": [
-        "src/scripts/interfaces/*"
+        "./src/scripts/interfaces/*"
       ]
     },
     "typeRoots": []
