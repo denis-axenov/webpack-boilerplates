@@ -50,19 +50,19 @@ export default (env, argv) => {
                         {
                             loader: "css-loader",
                             options: {
-                                sourceMap: isProduction
+                                sourceMap: !isProduction
                             }
                         },
                         {
                             loader: "postcss-loader",
                             options: {
-                                sourceMap: isProduction
+                                sourceMap: !isProduction
                             }
                         },
                         {
                             loader: "sass-loader",
                             options: {
-                                sourceMap: isProduction,
+                                sourceMap: !isProduction,
                                 implementation: Sass
                             }
                         }
@@ -105,17 +105,20 @@ export default (env, argv) => {
             minimize: isProduction
         },
         stats: "minimal",
+        watchOptions: {
+            ignored: /node_modules|dist/,
+            poll: 1000
+        },
         devServer: {
             static: {
                 directory: buildFolder
             },
             compress: isProduction,
-            port: 9000,
+            port: "auto",
             watchFiles: [
                 resolveDir("src/**/*.(html|svg)")
             ],
-            hot: true,
-            open: true
+            hot: true
         }
     };
 };
