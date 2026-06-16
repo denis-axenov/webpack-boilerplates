@@ -5,7 +5,7 @@
   "main": "src/scripts/main.ts",
   "type": "module",
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=24.16.0"
   },
   "author": "Denis Axenov",
   "license": "MIT",
