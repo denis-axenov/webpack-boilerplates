@@ -50,19 +50,19 @@ export default (env, argv) => {
                         {
                             loader: "css-loader",
                             options: {
-                                sourceMap: isProduction
+                                sourceMap: !isProduction
                             }
                         },
                         {
                             loader: "postcss-loader",
                             options: {
-                                sourceMap: isProduction
+                                sourceMap: !isProduction
                             }
                         },
                         {
                             loader: "sass-loader",
                             options: {
-                                sourceMap: isProduction,
+                                sourceMap: !isProduction,
                                 implementation: Sass
                             }
                         }
