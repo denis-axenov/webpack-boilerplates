@@ -42,7 +42,7 @@ npm run build
 | --- | --- |
 | `npm run dev` | Start the dev server. |
 | `npm run dev:lint` | Start the dev server with lint plugins enabled. |
-| `npm run watch` | Build in development mode and watch files. |
+| `npm run watch` | Build in development watch mode. |
 | `npm run watch:lint` | Build in watch mode with lint plugins enabled. |
 | `npm run build` | Build production files to `dist`. |
 | `npm run build:lint` | Build production files with lint plugins enabled. |
